@@ -1,0 +1,14 @@
+{
+  "name": "enter name here",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "latest"
+  },
+  "description": "enter description here",
+  "main": "server.js ",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nikita Obidin",
+  "license": "ISC"
+}

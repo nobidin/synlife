@@ -1,0 +1,166 @@
+video {
+    min-width: 100%;
+    background: no-repeat;
+    background-color: black;
+    z-index: -100;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+
+.subtitle {
+
+    text-align:center; margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src: url('avenir-next-regular.woff');
+}
+
+@font-face {
+    font-family: "Avenir Next Bold";
+    src: url('avenir-next-bold.woff')
+}
+
+.btn {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+    font-family: "Avenir Next";
+    font-size: 30px
+}
+
+.btn a {
+    color: #fff
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    height: 500px;
+    background-size: cover;
+    background-position: center center
+}
+
+@media only screen and (max-width: 480px) {
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: 500px
+    }
+    .secondary {
+        height: 500px
+    }
+}
+
+.slide1 {
+    background-image: url(cells.jpg)
+}
+
+.slide2 {
+    background-image: url(index.jpg)
+}
+
+.slide3 {
+    background-image: url(tissue.jpg)
+}
+
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5
+}
+
+.carousel.carousel-fade .active.item {
+    opacity: 1
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.carousel-overlay {
+    position: absolute;
+    margin-bottom: 150px;
+    vertical-align: middle;
+    right: 0;
+    left: 0;
+    top: 250px;
+    z-index: 3000
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto
+}
+
+.navbar-nav > li > a:hover {
+    color: #000
+}
+
+.well {
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+hr {
+    border-color: gray
+}
+
+p {
+    font-size: 20px;
+    font-family: "Avenir Next";
+    text-align: center
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Avenir Next Bold";
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Avenir Next";
+    color: black;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "Avenir Next";
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: "Avenir Next";
+    color: #fff
+}
+
+html,
+body {
+    height: 100%
+}
+
+footer {
+    margin: 50px 0
+}
